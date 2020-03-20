@@ -1,0 +1,20 @@
+{
+    "name": "ivhong/db-log-factory",
+    "description": "数据库日志工厂",
+    "type": "library",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "ivhong",
+            "email": "hong350@163.com"
+        }
+    ],
+    "require": {
+        "php" : ">=7.3.0"   
+    },
+    "autoload": {
+        "psr-4" : {
+            "ivhong\\" : "ivhong"
+        }
+    }
+}
