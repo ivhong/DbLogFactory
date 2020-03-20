@@ -110,7 +110,7 @@ class ApiLog
                     $user='root';      //数据库连接用户名
                     $pass='';          //对应的密码
                     
-                    $dsn="$dbms:host=$host;dbname=$dbName;charset=UTF8";
+                    $dsn="$dbms:host=$host;dbname=$dbName;charset=utf8mb4";
                     return new PDO($dsn, $user, $pass);
                 }
             });

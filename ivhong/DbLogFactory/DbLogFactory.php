@@ -65,7 +65,7 @@ class DbLogFactory
 
         $sql = "create table IF NOT EXISTS `".$this->dbName."` (
         ".implode(",".PHP_EOL, $fieldsSql)."
-        ) engine=innodb,charset=utf8,comment'日志'";
+        ) engine=innodb,charset=utf8mb4,comment'日志'";
         return $sql;
     }
 
