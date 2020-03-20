@@ -31,7 +31,7 @@ class ApiLog
                 'controller' => $controller,
                 'action' => $action,
                 'get' => json_encode($get, JSON_UNESCAPED_UNICODE),
-                'post' => is_string($post) ? urldecode($post) : json_encode($post, JSON_UNESCAPED_UNICODE),
+                'post' => is_string($post) ? $post : json_encode($post, JSON_UNESCAPED_UNICODE),
                 'response' => is_string($response) ? $response : json_encode($response, JSON_UNESCAPED_UNICODE),
                 'useTime' => $useTime,
                 'createTime' => date('Y-m-d H:i:s'),
